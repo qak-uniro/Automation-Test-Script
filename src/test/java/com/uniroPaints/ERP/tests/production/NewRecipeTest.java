@@ -862,7 +862,7 @@ public class NewRecipeTest extends BaseTest {
         assert Objects.equals(subStepDescField.getAttribute("value"), "ABCdef123!@#$%^&*()_+-=[]{}|;:',.<>?/`~") : "The input field did not accept all characters as expected.";
     }
 
-    @Test(priority = 71, description = "Verify that field incorrectly allows multiple consecutive spaces (Bug Detection)")
+    @Test(priority = 75, description = "Verify that field incorrectly allows multiple consecutive spaces (Bug Detection)")
     public void testSubStepDescFieldAllowsMultipleSpaces() {
         WebElement subStepDescField = driver.findElement(By.xpath(subStepDescription));
         waitUntilNextElement(By.xpath(subStepDescription), 10);
